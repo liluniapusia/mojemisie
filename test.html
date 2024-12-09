@@ -1,0 +1,72 @@
+    <!DOCTYPE html>
+        <head>
+            <html lang="pl">
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Charmonman&family=Open+Sans:wght@300&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+            <title>Uwu</title>
+        </head>
+        <body>
+            <header>
+                <h1>Hi!! >_<</h1>
+                <img src="weqwe.jpg" alt="flowers">
+            </header>
+            <section id="question">
+                <h2>May I ask you a question?</h2>
+                <input type="button" value="Yes <3" id="yes" onclick="firstyes()">
+                <input type="button" value="No ??" id="no" onclick="firstno()"><br><br>
+                <iframe src="https://giphy.com/embed/1qe7ITLrwqf3Geq9De" width="480" height="360"></iframe>
+                <p><a href="https://giphy.com/gifs/1qe7ITLrwqf3Geq9De"></a></p>
+            </section>
+            <section id="ansyes">
+                
+                <h2>Ok..ok..</h2>
+                <h3>Are you ready to hear this question?</h3>
+                <iframe src="https://giphy.com/embed/MDJ9IbxxvDUQM" width="480" height="269" ></iframe>
+                <p><a href="https://giphy.com/gifs/cat-kisses-hugs-MDJ9IbxxvDUQM"></a></p>
+                <input type="button" value="Uhm..yes?" id="syes" onclick="secyes()">
+                <input type="button" value="whereNO?"  id="sno" onclick="secno()">
+            </section>
+            <footer>
+                <br><p>Made by: Lila</p>
+            </footer>
+            <script>
+            const first_yes = document.getElementById('yes');
+            const first_no = document.getElementById('no');
+            const second_yes = document.getElementById('syes');
+            const second_no = document.getElementById('sno');
+
+            function firstyes(){
+            document.getElementById('question').style.visibility = 'visible';
+            document.getElementById('ansyes').style.visibility = 'visible'; 
+            }
+            
+            function firstno() {
+               const test= prompt('But are you sure?');
+               if(test == 'yes' || test == 'Yes') {
+                alert('K.. bye!');
+               } else if (test == 'no' || test == 'No') {
+                alert('Choose once again then! <3');
+               } else {
+                alert('WHAT A HELL :<');
+               }
+            }
+
+            function secyes() {
+                const yupi = prompt('Will you be my valentine?');
+                if(yupi == 'yes' || 'Yes') {
+                    window.open('hapi.html', "_blank");
+                } else {
+                    alert(':(');
+                }
+            }
+
+            function secno() {
+                const notyupi = alert('AHA?>!>!>!>');
+                window.open('nothapi.html', "_blank");
+            }
+            </script>
+        </body>
+    </html>
